@@ -3148,7 +3148,7 @@ var _actions = require("./editor/actions");
 var _actionsDefault = parcelHelpers.interopDefault(_actions);
 var _svelte = require("svelte");
 function add_css(target) {
-    _internal.append_styles(target, "svelte-1u8kct", ".content-area.svelte-1u8kct.svelte-1u8kct{padding:35px 50px 35px 50px;max-width:1100px;margin-right:auto;margin-left:auto}.section-name.svelte-1u8kct.svelte-1u8kct{font-family:'Roboto', 'sans-serif';font-weight:400;font-size:40px;margin-left:10px}.btn.svelte-1u8kct.svelte-1u8kct{font-size:18px;font-weight:300;margin-left:15px;border:1px solid gainsboro;padding:5px 10px 5px 10px;border-radius:2px;vertical-align:middle;box-shadow:0px 2px 10px -8px;background-color:rgb(250, 250, 250)}.btn.svelte-1u8kct.svelte-1u8kct:hover{cursor:pointer}.section-container.svelte-1u8kct.svelte-1u8kct{width:100%;min-height:300px;border:1px solid gainsboro;border-radius:2px;background-color:rgb(250, 250, 250);box-shadow:0px 3px 20px -12px;padding:0 15px 15px 15px;margin-bottom:30px}.section-table.svelte-1u8kct.svelte-1u8kct{width:100%;border-collapse:collapse}.section-header.svelte-1u8kct.svelte-1u8kct{text-align:left;padding-bottom:10px}.section-row.svelte-1u8kct.svelte-1u8kct{max-height:20px}.section-row.svelte-1u8kct.svelte-1u8kct:hover{cursor:pointer;background-color:rgb(229, 227, 227)}.components-section.svelte-1u8kct.svelte-1u8kct{display:flex}.component-col.svelte-1u8kct.svelte-1u8kct{width:calc(100% / 3);padding:20px;border:1px solid gainsboro;border-radius:2px;background-color:rgb(250, 250, 250);box-shadow:0px 3px 20px -12px}.component-col.svelte-1u8kct.svelte-1u8kct:not(:last-child){margin-right:15px}.component-col-header.svelte-1u8kct.svelte-1u8kct{font-size:20px;font-weight:500}.component-col-row.svelte-1u8kct.svelte-1u8kct{margin-top:10px}.section-row.svelte-1u8kct>.svelte-1u8kct:first-child,.section-header.svelte-1u8kct>.svelte-1u8kct:first-child{padding-left:15px}");
+    _internal.append_styles(target, "svelte-uzbink", ".content-area.svelte-uzbink.svelte-uzbink{padding:35px 50px 35px 50px;max-width:1100px;margin-right:auto;margin-left:auto}.section-name.svelte-uzbink.svelte-uzbink{font-family:'Roboto', 'sans-serif';font-weight:400;font-size:40px;margin-left:10px}.btn.svelte-uzbink.svelte-uzbink{font-size:18px;font-weight:300;margin-left:15px;border:1px solid gainsboro;padding:5px 10px 5px 10px;border-radius:2px;vertical-align:middle;box-shadow:0px 2px 10px -8px;background-color:rgb(250, 250, 250)}.btn.svelte-uzbink.svelte-uzbink:hover{cursor:pointer}.section-container.svelte-uzbink.svelte-uzbink{width:100%;min-height:30vh;border:1px solid gainsboro;border-radius:2px;background-color:rgb(250, 250, 250);box-shadow:0px 3px 20px -12px;padding:0 15px 15px 15px;margin-bottom:30px}.section-table.svelte-uzbink.svelte-uzbink{width:100%;border-collapse:collapse}.section-header.svelte-uzbink.svelte-uzbink{text-align:left;padding-bottom:10px}.section-row.svelte-uzbink.svelte-uzbink{max-height:20px}.section-row.svelte-uzbink.svelte-uzbink:hover{cursor:pointer;background-color:rgb(229, 227, 227)}.components-section.svelte-uzbink.svelte-uzbink{display:flex}.component-col.svelte-uzbink.svelte-uzbink{width:calc(100% / 2);padding:20px;border:1px solid gainsboro;border-radius:2px;background-color:rgb(250, 250, 250);box-shadow:0px 3px 20px -12px}.component-col.svelte-uzbink.svelte-uzbink:not(:last-child){margin-right:15px}.component-col-header.svelte-uzbink.svelte-uzbink{font-size:20px;font-weight:500}.component-col-row.svelte-uzbink.svelte-uzbink{margin-top:10px}.section-row.svelte-uzbink>.svelte-uzbink:first-child,.section-header.svelte-uzbink>.svelte-uzbink:first-child{padding-left:15px}");
 }
 function get_each_context(ctx, list, i) {
     const child_ctx = ctx.slice();
@@ -3165,26 +3165,21 @@ function get_each_context_2(ctx, list, i) {
     child_ctx[13] = list[i];
     return child_ctx;
 }
-function get_each_context_3(ctx, list, i) {
-    const child_ctx = ctx.slice();
-    child_ctx[7] = list[i];
-    return child_ctx;
-}
 // (46:6) {#each workflows as workflow}
-function create_each_block_3(ctx) {
+function create_each_block_2(ctx) {
     let tr;
     let td0;
-    let t0_value = /*workflow*/ ctx[7].title + "";
+    let t0_value = /*workflow*/ ctx[13].title + "";
     let t0;
     let t1;
     let td1;
-    let t2_value = /*workflow*/ ctx[7].lastModifiedAt + "";
+    let t2_value = /*workflow*/ ctx[13].lastModifiedAt + "";
     let t2;
     let t3;
     let mounted;
     let dispose;
     function click_handler() {
-        return /*click_handler*/ ctx[4](/*workflow*/ ctx[7]);
+        return /*click_handler*/ ctx[4](/*workflow*/ ctx[13]);
     }
     return {
         c () {
@@ -3195,9 +3190,9 @@ function create_each_block_3(ctx) {
             td1 = _internal.element("td");
             t2 = _internal.text(t2_value);
             t3 = _internal.space();
-            _internal.attr(td0, "class", "svelte-1u8kct");
-            _internal.attr(td1, "class", "svelte-1u8kct");
-            _internal.attr(tr, "class", "section-row svelte-1u8kct");
+            _internal.attr(td0, "class", "svelte-uzbink");
+            _internal.attr(td1, "class", "svelte-uzbink");
+            _internal.attr(tr, "class", "section-row svelte-uzbink");
             _internal.attr(tr, "height", "40px");
         },
         m (target, anchor) {
@@ -3215,8 +3210,8 @@ function create_each_block_3(ctx) {
         },
         p (new_ctx, dirty) {
             ctx = new_ctx;
-            if (dirty & /*workflows*/ 2 && t0_value !== (t0_value = /*workflow*/ ctx[7].title + "")) _internal.set_data(t0, t0_value);
-            if (dirty & /*workflows*/ 2 && t2_value !== (t2_value = /*workflow*/ ctx[7].lastModifiedAt + "")) _internal.set_data(t2, t2_value);
+            if (dirty & /*workflows*/ 2 && t0_value !== (t0_value = /*workflow*/ ctx[13].title + "")) _internal.set_data(t0, t0_value);
+            if (dirty & /*workflows*/ 2 && t2_value !== (t2_value = /*workflow*/ ctx[13].lastModifiedAt + "")) _internal.set_data(t2, t2_value);
         },
         d (detaching) {
             if (detaching) _internal.detach(tr);
@@ -3226,22 +3221,22 @@ function create_each_block_3(ctx) {
     };
 }
 // (62:6) {#each metadata?.eventDefs || [] as event}
-function create_each_block_2(ctx1) {
+function create_each_block_1(ctx1) {
     let div;
-    let t_value = /*event*/ ctx1[13].title + "";
+    let t_value = /*event*/ ctx1[10].title + "";
     let t;
     return {
         c () {
             div = _internal.element("div");
             t = _internal.text(t_value);
-            _internal.attr(div, "class", "component-col-row svelte-1u8kct");
+            _internal.attr(div, "class", "component-col-row svelte-uzbink");
         },
         m (target, anchor) {
             _internal.insert(target, div, anchor);
             _internal.append(div, t);
         },
         p (ctx, dirty) {
-            if (dirty & /*metadata*/ 1 && t_value !== (t_value = /*event*/ ctx[13].title + "")) _internal.set_data(t, t_value);
+            if (dirty & /*metadata*/ 1 && t_value !== (t_value = /*event*/ ctx[10].title + "")) _internal.set_data(t, t_value);
         },
         d (detaching) {
             if (detaching) _internal.detach(div);
@@ -3249,53 +3244,30 @@ function create_each_block_2(ctx1) {
     };
 }
 // (68:6) {#each metadata?.actionDefs || [] as action}
-function create_each_block_1(ctx2) {
+function create_each_block(ctx2) {
     let div;
-    let t_value = /*action*/ ctx2[10].title + "";
+    let t_value = /*action*/ ctx2[7].title + "";
     let t;
     return {
         c () {
             div = _internal.element("div");
             t = _internal.text(t_value);
-            _internal.attr(div, "class", "component-col-row svelte-1u8kct");
+            _internal.attr(div, "class", "component-col-row svelte-uzbink");
         },
         m (target, anchor) {
             _internal.insert(target, div, anchor);
             _internal.append(div, t);
         },
         p (ctx, dirty) {
-            if (dirty & /*metadata*/ 1 && t_value !== (t_value = /*action*/ ctx[10].title + "")) _internal.set_data(t, t_value);
+            if (dirty & /*metadata*/ 1 && t_value !== (t_value = /*action*/ ctx[7].title + "")) _internal.set_data(t, t_value);
         },
         d (detaching) {
             if (detaching) _internal.detach(div);
         }
     };
 }
-// (74:6) {#each metadata?.workflowDefs || [] as workflow}
-function create_each_block(ctx3) {
-    let div;
-    let t_value = /*workflow*/ ctx3[7].title + "";
-    let t;
-    return {
-        c () {
-            div = _internal.element("div");
-            t = _internal.text(t_value);
-            _internal.attr(div, "class", "component-col-row svelte-1u8kct");
-        },
-        m (target, anchor) {
-            _internal.insert(target, div, anchor);
-            _internal.append(div, t);
-        },
-        p (ctx, dirty) {
-            if (dirty & /*metadata*/ 1 && t_value !== (t_value = /*workflow*/ ctx[7].title + "")) _internal.set_data(t, t_value);
-        },
-        d (detaching) {
-            if (detaching) _internal.detach(div);
-        }
-    };
-}
-function create_fragment(ctx4) {
-    let div8;
+function create_fragment(ctx3) {
+    let div6;
     let h20;
     let t0;
     let span;
@@ -3307,7 +3279,7 @@ function create_fragment(ctx4) {
     let t7;
     let h21;
     let t9;
-    let div7;
+    let div5;
     let div2;
     let div1;
     let t11;
@@ -3315,27 +3287,20 @@ function create_fragment(ctx4) {
     let div4;
     let div3;
     let t14;
-    let t15;
-    let div6;
-    let div5;
-    let t17;
     let mounted;
     let dispose;
-    let each_value_3 = /*workflows*/ ctx4[1];
-    let each_blocks_3 = [];
-    for(let i7 = 0; i7 < each_value_3.length; i7 += 1)each_blocks_3[i7] = create_each_block_3(get_each_context_3(ctx4, each_value_3, i7));
-    let each_value_2 = /*metadata*/ ctx4[0]?.eventDefs || [];
+    let each_value_2 = /*workflows*/ ctx3[1];
     let each_blocks_2 = [];
-    for(let i1 = 0; i1 < each_value_2.length; i1 += 1)each_blocks_2[i1] = create_each_block_2(get_each_context_2(ctx4, each_value_2, i1));
-    let each_value_1 = /*metadata*/ ctx4[0]?.actionDefs || [];
+    for(let i5 = 0; i5 < each_value_2.length; i5 += 1)each_blocks_2[i5] = create_each_block_2(get_each_context_2(ctx3, each_value_2, i5));
+    let each_value_1 = /*metadata*/ ctx3[0]?.eventDefs || [];
     let each_blocks_1 = [];
-    for(let i2 = 0; i2 < each_value_1.length; i2 += 1)each_blocks_1[i2] = create_each_block_1(get_each_context_1(ctx4, each_value_1, i2));
-    let each_value = /*metadata*/ ctx4[0]?.workflowDefs || [];
+    for(let i1 = 0; i1 < each_value_1.length; i1 += 1)each_blocks_1[i1] = create_each_block_1(get_each_context_1(ctx3, each_value_1, i1));
+    let each_value = /*metadata*/ ctx3[0]?.actionDefs || [];
     let each_blocks = [];
-    for(let i3 = 0; i3 < each_value.length; i3 += 1)each_blocks[i3] = create_each_block(get_each_context(ctx4, each_value, i3));
+    for(let i2 = 0; i2 < each_value.length; i2 += 1)each_blocks[i2] = create_each_block(get_each_context(ctx3, each_value, i2));
     return {
         c () {
-            div8 = _internal.element("div");
+            div6 = _internal.element("div");
             h20 = _internal.element("h2");
             t0 = _internal.text("Workflows\r\n    ");
             span = _internal.element("span");
@@ -3344,101 +3309,73 @@ function create_fragment(ctx4) {
             div0 = _internal.element("div");
             table = _internal.element("table");
             tr = _internal.element("tr");
-            tr.innerHTML = `<th class="svelte-1u8kct">Title</th> 
+            tr.innerHTML = `<th class="svelte-uzbink">Title</th> 
         
-        <th class="svelte-1u8kct">Last Modified</th>`;
+        <th class="svelte-uzbink">Last Modified</th>`;
             t6 = _internal.space();
-            for(let i = 0; i < each_blocks_3.length; i += 1)each_blocks_3[i].c();
+            for(let i = 0; i < each_blocks_2.length; i += 1)each_blocks_2[i].c();
             t7 = _internal.space();
             h21 = _internal.element("h2");
             h21.textContent = "Components";
             t9 = _internal.space();
-            div7 = _internal.element("div");
+            div5 = _internal.element("div");
             div2 = _internal.element("div");
             div1 = _internal.element("div");
             div1.textContent = "Events";
             t11 = _internal.space();
-            for(let i4 = 0; i4 < each_blocks_2.length; i4 += 1)each_blocks_2[i4].c();
+            for(let i3 = 0; i3 < each_blocks_1.length; i3 += 1)each_blocks_1[i3].c();
             t12 = _internal.space();
             div4 = _internal.element("div");
             div3 = _internal.element("div");
             div3.textContent = "Actions";
             t14 = _internal.space();
-            for(let i5 = 0; i5 < each_blocks_1.length; i5 += 1)each_blocks_1[i5].c();
-            t15 = _internal.space();
-            div6 = _internal.element("div");
-            div5 = _internal.element("div");
-            div5.textContent = "Templates";
-            t17 = _internal.space();
-            for(let i6 = 0; i6 < each_blocks.length; i6 += 1)each_blocks[i6].c();
-            _internal.attr(span, "class", "btn svelte-1u8kct");
-            _internal.attr(h20, "class", "section-name svelte-1u8kct");
+            for(let i4 = 0; i4 < each_blocks.length; i4 += 1)each_blocks[i4].c();
+            _internal.attr(span, "class", "btn svelte-uzbink");
+            _internal.attr(h20, "class", "section-name svelte-uzbink");
             _internal.attr(tr, "height", "60px");
-            _internal.attr(tr, "class", "section-header svelte-1u8kct");
-            _internal.attr(table, "class", "section-table svelte-1u8kct");
-            _internal.attr(div0, "class", "section-container svelte-1u8kct");
-            _internal.attr(h21, "class", "section-name svelte-1u8kct");
-            _internal.attr(div1, "class", "component-col-header svelte-1u8kct");
-            _internal.attr(div2, "class", "component-col svelte-1u8kct");
-            _internal.attr(div3, "class", "component-col-header svelte-1u8kct");
-            _internal.attr(div4, "class", "component-col svelte-1u8kct");
-            _internal.attr(div5, "class", "component-col-header svelte-1u8kct");
-            _internal.attr(div6, "class", "component-col svelte-1u8kct");
-            _internal.attr(div7, "class", "components-section svelte-1u8kct");
-            _internal.attr(div8, "class", "content-area svelte-1u8kct");
+            _internal.attr(tr, "class", "section-header svelte-uzbink");
+            _internal.attr(table, "class", "section-table svelte-uzbink");
+            _internal.attr(div0, "class", "section-container svelte-uzbink");
+            _internal.attr(h21, "class", "section-name svelte-uzbink");
+            _internal.attr(div1, "class", "component-col-header svelte-uzbink");
+            _internal.attr(div2, "class", "component-col svelte-uzbink");
+            _internal.attr(div3, "class", "component-col-header svelte-uzbink");
+            _internal.attr(div4, "class", "component-col svelte-uzbink");
+            _internal.attr(div5, "class", "components-section svelte-uzbink");
+            _internal.attr(div6, "class", "content-area svelte-uzbink");
         },
         m (target, anchor) {
-            _internal.insert(target, div8, anchor);
-            _internal.append(div8, h20);
+            _internal.insert(target, div6, anchor);
+            _internal.append(div6, h20);
             _internal.append(h20, t0);
             _internal.append(h20, span);
-            _internal.append(div8, t2);
-            _internal.append(div8, div0);
+            _internal.append(div6, t2);
+            _internal.append(div6, div0);
             _internal.append(div0, table);
             _internal.append(table, tr);
             _internal.append(table, t6);
-            for(let i = 0; i < each_blocks_3.length; i += 1)each_blocks_3[i].m(table, null);
-            _internal.append(div8, t7);
-            _internal.append(div8, h21);
-            _internal.append(div8, t9);
-            _internal.append(div8, div7);
-            _internal.append(div7, div2);
+            for(let i = 0; i < each_blocks_2.length; i += 1)each_blocks_2[i].m(table, null);
+            _internal.append(div6, t7);
+            _internal.append(div6, h21);
+            _internal.append(div6, t9);
+            _internal.append(div6, div5);
+            _internal.append(div5, div2);
             _internal.append(div2, div1);
             _internal.append(div2, t11);
-            for(let i8 = 0; i8 < each_blocks_2.length; i8 += 1)each_blocks_2[i8].m(div2, null);
-            _internal.append(div7, t12);
-            _internal.append(div7, div4);
+            for(let i6 = 0; i6 < each_blocks_1.length; i6 += 1)each_blocks_1[i6].m(div2, null);
+            _internal.append(div5, t12);
+            _internal.append(div5, div4);
             _internal.append(div4, div3);
             _internal.append(div4, t14);
-            for(let i9 = 0; i9 < each_blocks_1.length; i9 += 1)each_blocks_1[i9].m(div4, null);
-            _internal.append(div7, t15);
-            _internal.append(div7, div6);
-            _internal.append(div6, div5);
-            _internal.append(div6, t17);
-            for(let i10 = 0; i10 < each_blocks.length; i10 += 1)each_blocks[i10].m(div6, null);
+            for(let i7 = 0; i7 < each_blocks.length; i7 += 1)each_blocks[i7].m(div4, null);
             if (!mounted) {
-                dispose = _internal.listen(span, "click", /*createWorkflow*/ ctx4[2]);
+                dispose = _internal.listen(span, "click", /*createWorkflow*/ ctx3[2]);
                 mounted = true;
             }
         },
         p (ctx, [dirty]) {
             if (dirty & /*openWorkflow, workflows*/ 10) {
-                each_value_3 = /*workflows*/ ctx[1];
-                let i;
-                for(i = 0; i < each_value_3.length; i += 1){
-                    const child_ctx = get_each_context_3(ctx, each_value_3, i);
-                    if (each_blocks_3[i]) each_blocks_3[i].p(child_ctx, dirty);
-                    else {
-                        each_blocks_3[i] = create_each_block_3(child_ctx);
-                        each_blocks_3[i].c();
-                        each_blocks_3[i].m(table, null);
-                    }
-                }
-                for(; i < each_blocks_3.length; i += 1)each_blocks_3[i].d(1);
-                each_blocks_3.length = each_value_3.length;
-            }
-            if (dirty & /*metadata*/ 1) {
-                each_value_2 = /*metadata*/ ctx[0]?.eventDefs || [];
+                each_value_2 = /*workflows*/ ctx[1];
                 let i;
                 for(i = 0; i < each_value_2.length; i += 1){
                     const child_ctx = get_each_context_2(ctx, each_value_2, i);
@@ -3446,14 +3383,14 @@ function create_fragment(ctx4) {
                     else {
                         each_blocks_2[i] = create_each_block_2(child_ctx);
                         each_blocks_2[i].c();
-                        each_blocks_2[i].m(div2, null);
+                        each_blocks_2[i].m(table, null);
                     }
                 }
                 for(; i < each_blocks_2.length; i += 1)each_blocks_2[i].d(1);
                 each_blocks_2.length = each_value_2.length;
             }
             if (dirty & /*metadata*/ 1) {
-                each_value_1 = /*metadata*/ ctx[0]?.actionDefs || [];
+                each_value_1 = /*metadata*/ ctx[0]?.eventDefs || [];
                 let i;
                 for(i = 0; i < each_value_1.length; i += 1){
                     const child_ctx = get_each_context_1(ctx, each_value_1, i);
@@ -3461,14 +3398,14 @@ function create_fragment(ctx4) {
                     else {
                         each_blocks_1[i] = create_each_block_1(child_ctx);
                         each_blocks_1[i].c();
-                        each_blocks_1[i].m(div4, null);
+                        each_blocks_1[i].m(div2, null);
                     }
                 }
                 for(; i < each_blocks_1.length; i += 1)each_blocks_1[i].d(1);
                 each_blocks_1.length = each_value_1.length;
             }
             if (dirty & /*metadata*/ 1) {
-                each_value = /*metadata*/ ctx[0]?.workflowDefs || [];
+                each_value = /*metadata*/ ctx[0]?.actionDefs || [];
                 let i;
                 for(i = 0; i < each_value.length; i += 1){
                     const child_ctx = get_each_context(ctx, each_value, i);
@@ -3476,7 +3413,7 @@ function create_fragment(ctx4) {
                     else {
                         each_blocks[i] = create_each_block(child_ctx);
                         each_blocks[i].c();
-                        each_blocks[i].m(div6, null);
+                        each_blocks[i].m(div4, null);
                     }
                 }
                 for(; i < each_blocks.length; i += 1)each_blocks[i].d(1);
@@ -3486,8 +3423,7 @@ function create_fragment(ctx4) {
         i: _internal.noop,
         o: _internal.noop,
         d (detaching) {
-            if (detaching) _internal.detach(div8);
-            _internal.destroy_each(each_blocks_3, detaching);
+            if (detaching) _internal.detach(div6);
             _internal.destroy_each(each_blocks_2, detaching);
             _internal.destroy_each(each_blocks_1, detaching);
             _internal.destroy_each(each_blocks, detaching);
