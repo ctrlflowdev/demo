@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@100;300;400;500&display=swap";
-.nav-bar.svelte-r8xme6 {
+.nav-bar.svelte-6fiwpl {
   width: 100%;
   height: 60px;
   color: #fff;
@@ -9,21 +9,20 @@
   box-shadow: 0 -10px 15px;
 }
 
-.nav-banner.svelte-r8xme6 {
+.nav-banner.svelte-6fiwpl {
   text-align: center;
   cursor: pointer;
   margin-left: 45px;
-  margin-right: 160px;
   font-size: 24px;
   display: inline-block;
 }
 
-.brand-segment-lowcode.svelte-r8xme6 {
+.brand-segment-lowcode.svelte-6fiwpl {
   font-family: Roboto Mono, monospace;
   font-weight: 300;
 }
 
-.brand-segment-devkit.svelte-r8xme6 {
+.brand-segment-devkit.svelte-6fiwpl {
   color: #ea8800;
   font-family: Roboto, sans-serif;
   font-size: 25px;
