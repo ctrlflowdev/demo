@@ -7,3 +7,4 @@ npm run demo:build
 Pop-Location
 
 Copy-Item ../lcdk/dashboard/demo/dist/* .
+Copy-Item index.html 404.html
