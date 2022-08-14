@@ -2,7 +2,7 @@ Remove-Item ./* -Exclude @("publish.ps1", "CNAME")
 
 Push-Location ../ctrlflow/dashboard
 
-pnpm run demo:build
+pnpm demo:build
 
 Pop-Location
 
