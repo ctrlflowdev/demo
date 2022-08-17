@@ -1,6 +1,6 @@
 Push-Location $PSScriptRoot
 
-Remove-Item ./docs/*
+Remove-Item ./docs/* -Exclude @("CNAME")
 
 Push-Location ../ctrlflow/packages/dashboard
 
