@@ -1,6 +1,6 @@
 Push-Location $PSScriptRoot
 
-Remove-Item ./* -Exclude @("publish.ps1", "CNAME")
+Remove-Item ./docs/*
 
 Push-Location ../ctrlflow/packages/dashboard
 
@@ -8,8 +8,8 @@ pnpm demo:build
 
 Pop-Location
 
-Copy-Item ../ctrlflow/packages/dashboard/demo/dist/* .
-Copy-Item index.html 404.html
+Copy-Item ../ctrlflow/packages/dashboard/demo/dist/* ./docs
+Copy-Item ./docs/index.html ./docs/404.html
 
 git add -A
 
